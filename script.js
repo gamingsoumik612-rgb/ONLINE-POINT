@@ -1,1 +1,1 @@
-console.log("ONLINE POINT Loaded");
+console.log("ONLINE POINT Premium Loaded");
