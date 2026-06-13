@@ -5,233 +5,97 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ONLINE POINT</title>
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
-body{
-background:#050816;
-color:white;
-}
-
-header{
-background:#081b33;
-padding:20px;
-position:sticky;
-top:0;
-}
-
-.logo{
-font-size:32px;
-font-weight:bold;
-color:#00e5ff;
-}
-
-.hero{
-text-align:center;
-padding:80px 20px;
-}
-
-.hero h1{
-font-size:55px;
-color:#00e5ff;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:22px;
-line-height:1.8;
-max-width:900px;
-margin:auto;
-}
-
-.btn{
-display:inline-block;
-margin-top:30px;
-padding:15px 35px;
-background:#00e5ff;
-color:black;
-text-decoration:none;
-font-weight:bold;
-border-radius:50px;
-}
-
-.section{
-padding:60px 20px;
-}
-
-.title{
-text-align:center;
-font-size:38px;
-color:#00e5ff;
-margin-bottom:40px;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-max-width:1200px;
-margin:auto;
-}
-
-.card{
-background:#0d152b;
-padding:25px;
-border-radius:20px;
-}
-
-.card h3{
-color:#00e5ff;
-margin-bottom:10px;
-}
-
-.contact{
-max-width:800px;
-margin:auto;
-text-align:center;
-background:#0d152b;
-padding:30px;
-border-radius:20px;
-}
-
-.contact p{
-margin:10px 0;
-font-size:18px;
-}
-
-.footer{
-text-align:center;
-padding:25px;
-background:#081b33;
-margin-top:40px;
-}
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px 25px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-}
-</style>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header>
+<div id="particles"></div>
+
+<nav class="navbar">
 <div class="logo">ONLINE POINT</div>
-</header>
+<div class="menu">
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
 
 <section class="hero">
+<div class="hero-content">
 <h1>ONLINE POINT</h1>
+<p>সকল সরকারি ও বেসরকারি ডিজিটাল পরিষেবা এক ছাদের নিচে</p>
 
-<p>
-সকল সরকারি ও বেসরকারি অনলাইন পরিষেবা এক ছাদের নিচে।
-দ্রুত, নিরাপদ ও বিশ্বস্ত ডিজিটাল পরিষেবা।
-</p>
-
-<a class="btn" href="https://wa.me/917797592233">
+<a href="https://wa.me/917797592233" class="btn">
 WhatsApp করুন
 </a>
+</div>
 </section>
 
-<section class="section">
-<h2 class="title">আমাদের পরিষেবাসমূহ</h2>
+<section id="services" class="services">
+<h2>আমাদের পরিষেবাসমূহ</h2>
 
-<div class="grid">
+<div class="cards">
 
 <div class="card">
 <h3>আধার কার্ড</h3>
-<p>নতুন আবেদন, সংশোধন ও আপডেট।</p>
+<p>নতুন আবেদন, আপডেট ও সংশোধন</p>
 </div>
 
 <div class="card">
 <h3>ভোটার কার্ড</h3>
-<p>নতুন আবেদন ও সংশোধন।</p>
+<p>নতুন আবেদন ও সংশোধন</p>
 </div>
 
 <div class="card">
 <h3>প্যান কার্ড</h3>
-<p>নতুন ও সংশোধিত প্যান আবেদন।</p>
+<p>নতুন ও সংশোধিত আবেদন</p>
 </div>
 
 <div class="card">
 <h3>আয়ুষ্মান কার্ড</h3>
-<p>রেজিস্ট্রেশন ও আপডেট।</p>
+<p>রেজিস্ট্রেশন ও আপডেট</p>
 </div>
 
 <div class="card">
 <h3>রেশন কার্ড</h3>
-<p>আবেদন ও বিভিন্ন পরিষেবা।</p>
+<p>আবেদন ও বিভিন্ন পরিষেবা</p>
 </div>
 
 <div class="card">
 <h3>লক্ষ্মীর ভাণ্ডার</h3>
-<p>আবেদন ও স্ট্যাটাস সহায়তা।</p>
-</div>
-
-<div class="card">
-<h3>অন্নপূর্ণা ভাণ্ডার</h3>
-<p>ফর্ম ফিলাপ ও সহায়তা।</p>
-</div>
-
-<div class="card">
-<h3>ITI ও কলেজ ভর্তি</h3>
-<p>অনলাইন আবেদন ও কাউন্সেলিং সহায়তা।</p>
-</div>
-
-<div class="card">
-<h3>স্কলারশিপ</h3>
-<p>বিভিন্ন সরকারি স্কলারশিপ আবেদন।</p>
-</div>
-
-<div class="card">
-<h3>প্রিন্ট ও স্ক্যান</h3>
-<p>সকল ধরনের ডকুমেন্ট প্রিন্ট ও স্ক্যান।</p>
+<p>আবেদন ও স্ট্যাটাস সহায়তা</p>
 </div>
 
 </div>
 </section>
 
-<section class="section">
-<h2 class="title">যোগাযোগ</h2>
+<section id="about" class="about">
+<h2>আমাদের সম্পর্কে</h2>
 
-<div class="contact">
-<p><b>মালিক:</b> AMIT DAS</p>
-<p><b>মোবাইল:</b> 7797592233</p>
-<p><b>ঠিকানা:</b> NALHATI, নলহাটি দাসপাড়া মোড়, পেকুড়তলা সন্নিকটে</p>
-</div>
+<p>
+ONLINE POINT-এ দ্রুত ও নির্ভুলভাবে সরকারি ও বেসরকারি অনলাইন পরিষেবা প্রদান করা হয়।
+</p>
 </section>
 
-<div class="footer">
-© ONLINE POINT | All Rights Reserved
-</div>
+<section id="contact" class="contact">
+<h2>যোগাযোগ</h2>
 
-<a class="whatsapp" href="https://wa.me/917797592233">
-WhatsApp
+<p><strong>মালিক:</strong> AMIT DAS</p>
+<p><strong>মোবাইল:</strong> 7797592233</p>
+<p><strong>ঠিকানা:</strong> NALHATI, নলহাটি দাসপাড়া মোড়, পেকুড়তলা সন্নিকটে</p>
+
+<a href="https://wa.me/917797592233" class="btn">
+WhatsApp Chat
 </a>
+</section>
 
-</body>
-</html>>
-<!DOCTYPE html>
-<html>
-<head>
-<title>ONLINE POINT</title>
-</head>
-<body style="background:black;color:white;text-align:center;padding-top:100px;">
+<footer>
+© ONLINE POINT | All Rights Reserved
+</footer>
 
-<h1>ONLINE POINT</h1>
-
-<p>Website Working Successfully</p>
+<script src="script.js"></script>
 
 </body>
 </html>
