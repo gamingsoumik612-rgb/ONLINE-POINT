@@ -3,156 +3,137 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ONLINE POINT</title>
+<title>ONLINE POINT | Nalhati</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+font-family:'Noto Sans Bengali',sans-serif;
 }
 
 body{
 background:#050816;
-overflow-x:hidden;
 color:white;
+overflow-x:hidden;
 }
 
 .hero{
-height:100vh;
+min-height:100vh;
 display:flex;
+flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-position:relative;
-overflow:hidden;
-}
-
-.hero::before{
-content:'';
-position:absolute;
-width:700px;
-height:700px;
-background:radial-gradient(circle,#00d9ff55,transparent);
-top:-200px;
-left:-200px;
-animation:float 6s infinite alternate;
-}
-
-.hero::after{
-content:'';
-position:absolute;
-width:700px;
-height:700px;
-background:radial-gradient(circle,#ff6b0055,transparent);
-bottom:-200px;
-right:-200px;
-animation:float 8s infinite alternate;
-}
-
-@keyframes float{
-0%{transform:translateY(0);}
-100%{transform:translateY(50px);}
-}
-
-.glass{
-position:relative;
-z-index:2;
-background:rgba(255,255,255,0.08);
-backdrop-filter:blur(20px);
-padding:50px;
-border-radius:30px;
-border:1px solid rgba(255,255,255,0.15);
-max-width:900px;
-width:90%;
+padding:30px;
+background:
+radial-gradient(circle at top,#00e5ff33,transparent 50%),
+radial-gradient(circle at bottom,#ff00ff22,transparent 50%),
+#050816;
 }
 
 .logo{
-font-size:70px;
+font-size:55px;
 font-weight:700;
-background:linear-gradient(90deg,#ffffff,#00d9ff,#ff6b00);
+background:linear-gradient(90deg,#00e5ff,#00ff99);
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
+margin-bottom:15px;
 }
 
 .tagline{
 font-size:22px;
-margin-top:10px;
-color:#ddd;
-}
-
-.desc{
-margin-top:20px;
-font-size:16px;
+max-width:700px;
 line-height:1.8;
-color:#bbb;
+color:#ddd;
 }
 
 .btn{
 display:inline-block;
 margin-top:30px;
-padding:15px 35px;
+padding:16px 35px;
 border-radius:50px;
+background:linear-gradient(90deg,#00e5ff,#00ff99);
+color:#000;
+font-weight:bold;
 text-decoration:none;
-font-weight:600;
-background:linear-gradient(90deg,#ff6b00,#00d9ff);
-color:white;
-box-shadow:0 0 20px #00d9ff66;
-transition:.3s;
+font-size:18px;
+box-shadow:0 0 25px #00e5ff;
 }
 
-.btn:hover{
-transform:scale(1.05);
+.section{
+padding:60px 20px;
 }
 
-.stats{
-display:flex;
-justify-content:center;
-gap:30px;
-margin-top:35px;
-flex-wrap:wrap;
+.heading{
+text-align:center;
+font-size:32px;
+margin-bottom:40px;
+color:#00e5ff;
 }
 
-.stat-box{
-padding:15px 25px;
-border-radius:15px;
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+max-width:1200px;
+margin:auto;
+}
+
+.card{
 background:rgba(255,255,255,.05);
+backdrop-filter:blur(12px);
+border:1px solid rgba(255,255,255,.1);
+padding:25px;
+border-radius:20px;
+transition:.4s;
 }
 
-.stat-box h3{
-color:#00d9ff;
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px #00e5ff55;
+}
+
+.card h3{
+margin-bottom:10px;
+color:#00e5ff;
+}
+
+.contact{
+max-width:800px;
+margin:auto;
+text-align:center;
+}
+
+.contact-box{
+background:rgba(255,255,255,.05);
+padding:25px;
+border-radius:20px;
+margin-top:20px;
+}
+
+.footer{
+text-align:center;
+padding:30px;
+border-top:1px solid rgba(255,255,255,.1);
+color:#aaa;
 }
 
 .whatsapp{
 position:fixed;
-bottom:20px;
 right:20px;
+bottom:20px;
 background:#25D366;
-padding:15px 20px;
-border-radius:50px;
 color:white;
-text-decoration:none;
+padding:15px 25px;
+border-radius:50px;
 font-weight:bold;
+text-decoration:none;
+box-shadow:0 0 20px #25D366;
 z-index:999;
-}
-
-@media(max-width:768px){
-
-.logo{
-font-size:45px;
-}
-
-.tagline{
-font-size:18px;
-}
-
-.desc{
-font-size:14px;
-}
-
 }
 </style>
 </head>
@@ -160,50 +141,107 @@ font-size:14px;
 <body>
 
 <section class="hero">
-
-<div class="glass">
-
-<div class="logo">ONLINE POINT</div>
+<h1 class="logo">ONLINE POINT</h1>
 
 <p class="tagline">
-সকল সরকারি ও বেসরকারি অনলাইন পরিষেবা এক ছাদের নিচে
-</p>
-
-<p class="desc">
-আধার কার্ড, ভোটার কার্ড, প্যান কার্ড, আয়ুষ্মান কার্ড,
-রেশন কার্ড, লক্ষ্মীর ভান্ডার, অন্নপূর্ণা ভান্ডার,
-বিভিন্ন সরকারি প্রকল্প, কলেজ ও ITI ভর্তি,
-স্কলারশিপ, বিল পেমেন্ট, প্রিন্ট ও স্ক্যান পরিষেবা।
+সকল সরকারি ও বেসরকারি অনলাইন পরিষেবা এক ছাদের নিচে।
+দ্রুত, নিরাপদ ও বিশ্বস্ত পরিষেবা।
 </p>
 
 <a href="https://wa.me/917797592233" class="btn">
 WhatsApp করুন
 </a>
-
-<div class="stats">
-
-<div class="stat-box">
-<h3>100%</h3>
-<p>Trusted Service</p>
-</div>
-
-<div class="stat-box">
-<h3>Fast</h3>
-<p>Online Support</p>
-</div>
-
-<div class="stat-box">
-<h3>24×7</h3>
-<p>Digital Access</p>
-</div>
-
-</div>
-
-</div>
-
 </section>
 
-<a href="https://wa.me/917797592233" class="whatsapp">
+<section class="section">
+<h2 class="heading">আমাদের পরিষেবাসমূহ</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>আধার কার্ড</h3>
+<p>নতুন আবেদন, সংশোধন ও আপডেট।</p>
+</div>
+
+<div class="card">
+<h3>ভোটার কার্ড</h3>
+<p>নতুন আবেদন ও সংশোধন।</p>
+</div>
+
+<div class="card">
+<h3>প্যান কার্ড</h3>
+<p>নতুন ও সংশোধিত প্যান আবেদন।</p>
+</div>
+
+<div class="card">
+<h3>আয়ুষ্মান কার্ড</h3>
+<p>রেজিস্ট্রেশন ও আপডেট।</p>
+</div>
+
+<div class="card">
+<h3>রেশন কার্ড</h3>
+<p>আবেদন ও বিভিন্ন পরিষেবা।</p>
+</div>
+
+<div class="card">
+<h3>লক্ষ্মীর ভান্ডার</h3>
+<p>নতুন আবেদন ও আপডেট।</p>
+</div>
+
+<div class="card">
+<h3>অনুপূর্ণা ভান্ডার</h3>
+<p>ফর্ম ফিল-আপ ও আবেদন।</p>
+</div>
+
+<div class="card">
+<h3>স্কলারশিপ</h3>
+<p>বিভিন্ন স্কলারশিপ আবেদন।</p>
+</div>
+
+<div class="card">
+<h3>কলেজ ও ITI ভর্তি</h3>
+<p>অনলাইন ভর্তি ও কাউন্সেলিং।</p>
+</div>
+
+<div class="card">
+<h3>বিল পেমেন্ট</h3>
+<p>বিদ্যুৎ, মোবাইল ও অন্যান্য বিল।</p>
+</div>
+
+<div class="card">
+<h3>প্রিন্ট ও স্ক্যান</h3>
+<p>ডকুমেন্ট প্রিন্ট ও স্ক্যানিং।</p>
+</div>
+
+<div class="card">
+<h3>অন্যান্য ডিজিটাল পরিষেবা</h3>
+<p>সব ধরনের অনলাইন সহায়তা।</p>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<h2 class="heading">যোগাযোগ</h2>
+
+<div class="contact">
+
+<div class="contact-box">
+<h3>AMIT DAS</h3>
+<br>
+<p>📞 7797592233</p>
+<br>
+<p>📍 NALHATI, নলহাটি দাসপাড়া মোড়, পেকুড়তলা সন্নিকটে</p>
+</div>
+
+</div>
+</section>
+
+<div class="footer">
+© 2026 ONLINE POINT | All Rights Reserved
+</div>
+
+<a class="whatsapp" href="https://wa.me/917797592233">
 WhatsApp
 </a>
 
